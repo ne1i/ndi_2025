@@ -1,1 +1,39 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@font-face {
+  font-family: "JetBrains Mono Regular";
+  src: url("assets/fonts/JetBrainsMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "JetBrains Mono Bold";
+  src: url("assets/fonts/JetBrainsMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-jetbrains-regular {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 400;
+}
+
+.font-jetbrains-bold {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+}
+
+@theme {
+    --color-hack: #42e223;
+    --color-body-background: #0b0350;
+}
+
+a {
+    cursor:pointer
+}
+
+button {
+    cursor:pointer
+}

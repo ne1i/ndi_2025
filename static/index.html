@@ -5,8 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Evil Windows</title>
         <link rel="stylesheet" href="style.css">
+        <script type="module" src="hack-text.js"></script>
+        <script type="module" src="windows.js"></script>
     </head>
-    <body>
-        <h1 class="text-4xl text-red-500">Nuit de l'info</h1>
+    <body class="bg-black">
+        <div
+            class="bg-black flex mt-10 border border-gray-500 text-5xl mx-auto w-[30ch] items-center p-2">
+            <p class="text-hack text-center font-jetbrains-regular">></p>
+            <h1 class="text-hack ml-4 font-jetbrains-regular">F*ck</h1>
+            <h1 class="text-hack ml-4 font-jetbrains-regular"
+                id="corpo">Zindows</h1>
+        </div>
+        <div class="flex ">
+            <div id="windows" class="grid grid-cols-2 gap-2 w-60 mx-auto my-40">
+                <a href
+                    class="bg-blue-500 text-center aspect-square rounded-tl-lg"></a>
+                <a href
+                    class="bg-blue-500 text-center aspect-square rounded-tr-lg"></a>
+                <a href
+                    class="bg-blue-500 text-center aspect-square rounded-bl-lg"></a>
+                <a href
+                    class="bg-blue-500 text-center aspect-square rounded-br-lg"></a>
+            </div>
+        </div>
+
     </body>
 </html>
