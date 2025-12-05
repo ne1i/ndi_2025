@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Machine de Goldberg</title>
+
+        <!-- Windows XP Theme (include only one theme at a time) -->
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+        <link rel="stylesheet" type="text/css"
+            href="https://csshake.surge.sh/csshake.min.css">
+
+    </head>
+
+    <body>
+
+        <!-- Machine de Goldberg numéro 1 -->
+        <div id="machine-de-goldberg">
+
+            <!-- La pop-up -->
+            <div class="pp1 window window-popup">
+                <div class="title-bar">
+                    <div class="title-bar-text rainbow">
+                        Linux Arch – Antivirus
+                    </div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"
+                            onclick="closePopup1()"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="window-body-arch-1-popup">
+                        <img class="popup-arch-logo" src="assets/arch-logo.png"
+                            alt="Arch Linux Logo">
+                        <p>
+                            Le méchant <b>Zindows</b> veut vous voler vos
+                            données !
+                        </p>
+                    </div>
+
+                    <section class="field-row"
+                        style="justify-content: flex-end;">
+                        <button onclick="closePopup1()">OK</button>
+                    </section>
+                </div>
+            </div>
+
+            <!-- La pop-up 2 -->
+            <div class="window window-popup pp2">
+                <div class="title-bar">
+                    <div class="title-bar-text rainbow">
+                        Linux Arch – Antivirus
+                    </div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button id="close-a-2" aria-label="Close"
+                            onclick="closePopup2()"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="window-body-arch-1-popup">
+                        <img class="popup-arch-logo" src="assets/arch-logo.png"
+                            alt="Arch Linux Logo">
+                        <p>
+                            Activer le super <span class="rainbow">Linux Arch
+                                AV</span> pour protéger vos données ?
+                        </p>
+                    </div>
+
+                    <section class="field-row"
+                        style="justify-content: flex-end;">
+                        <img src="assets/planche1.webp" onclick id="planche1"
+                            class="planche1" alt="Planche 1">
+                        <button id="close-azd-2"
+                            onclick="closePopup2()">OUI</button>
+                    </section>
+                </div>
+            </div>
+
+            <!-- La pop-up 3 -->
+            <div class="window window-popup pp3 shake-slow"
+                style="display: none !important;">
+                <div class="title-bar">
+                    <div class="title-bar-text zindows-title">
+                        Zindows – Le méchant très méchant
+                    </div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"
+                            onclick="closePopup2()"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="window-body-arch-1-popup">
+                        <img class="popup-arch-logo"
+                            src="assets/zindow-logo.webp" alt="Arch Linux Logo">
+                        <p>
+                            <b>
+                                JE VAIS VOLER TOUTES VOS DONNÉES !
+                            </b>
+                        </p>
+                    </div>
+
+                    <section class="field-row"
+                        style="justify-content: flex-end;">
+                        <button onclick="closePopup2()">FERMER</button>
+                    </section>
+                </div>
+            </div>
+
+            <!-- La pop-up 4 -->
+            <div class="window window-popup pp4">
+                <div class="title-bar">
+                    <div class="title-bar-text rainbow">
+                        Linux Arch – Antivirus
+                    </div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"
+                            onclick="closePopup4()"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="window-body-arch-1-popup">
+                        <img class="popup-arch-logo" src="assets/arch-logo.png"
+                            alt="Arch Linux Logo">
+                        <p>
+                            Vite, prend ce <span class="rainbow">MARTEAU</span>
+                            pour casser la planche !
+                        </p>
+                    </div>
+
+                    <section class="field-row"
+                        style="justify-content: flex-end;">
+                        <button onclick="closePopup4()">PRENDRE</button>
+                    </section>
+                </div>
+            </div>
+
+            <!-- La pop-up 5 -->
+            <div class="window window-popup pp5 shake-slow" id="popup"
+                style="display: none !important;">
+                <div class="title-bar">
+                    <div class="title-bar-text zindows-title">
+                        Zindows – Le méchant très méchant
+                    </div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"
+                            onclick="closePopup5()"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="window-body-arch-1-popup">
+                        <img class="popup-arch-logo"
+                            src="assets/zindow-logo.webp" alt="Arch Linux Logo">
+                        <p>
+                            <b>
+                                JE VAIS VOLER TOUTES VOS DONNÉES !
+                            </b>
+                        </p>
+                    </div>
+
+                    <section class="field-row"
+                        style="justify-content: flex-end;">
+                        <button onclick="closePopup5()">FERMER</button>
+                    </section>
+                </div>
+            </div>
+
+            <!-- La pop-up 6 -->
+            <div class="window window-popup pp6">
+                <div class="title-bar">
+                    <div class="title-bar-text rainbow">
+                        Linux Arch – Antivirus
+                    </div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"
+                            onclick="closePopup6()"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="window-body-arch-1-popup">
+                        <img class="popup-arch-logo" src="assets/arch-logo.png"
+                            alt="Arch Linux Logo">
+                        <p>
+                            <span class="rainbow">Bravo</span> le <span
+                                class="rainbow">Linux Arch – Antivirus</span> a
+                            exterminé le méchant Zindows. Vous avez protégé vos
+                            données : <br>Vous avez le choix de passer sur <span
+                                class="rainbow">Arch Linux</span>
+                        </p>
+                    </div>
+
+                    <section class="field-row"
+                        style="justify-content: flex-end;">
+                        <button onclick="closePopup6()">OK</button>
+                    </section>
+                </div>
+            </div>
+
+            <!-- La pop-up 6 bis -->
+            <div class="window window-popup pp6bis shake-slow" id="popup"
+                style="display: none !important;">
+                <div class="title-bar">
+                    <div class="title-bar-text zindows-title">
+                        Zindows – Le méchant très méchant
+                    </div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close" onclick="a()"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="window-body-arch-1-popup">
+                        <img class="popup-arch-logo"
+                            src="assets/zindow-logo.webp" alt="Arch Linux Logo">
+                        <p class="azdoijijf">
+                            <b>
+                                TU NE PEUX PAS ME SUPPRIMER COMME ÇA !
+                            </b>
+                        </p>
+                    </div>
+
+                    <section class="field-row"
+                        style="justify-content: flex-end;">
+                        <button class="akzjdajzjazdi" onclick="a()">OK</button>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+        <script src="path.js"></script>
+    </body>
+
+</html>
