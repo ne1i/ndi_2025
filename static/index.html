@@ -8,27 +8,170 @@
         <script type="module" src="hack-text.js"></script>
         <script type="module" src="windows.js"></script>
         <script type="module" src="start_zindows.js"></script>
+        <script type="module" src="Activites.js"></script>
+        <script type="module" src="snake.js"></script>
     </head>
-    <body class="bg-black">
-        <div
-            class="bg-black flex mt-10 border border-gray-500 text-5xl mx-auto w-[30ch] items-center p-2">
-            <p class="text-hack text-center font-jetbrains-regular">></p>
-            <h1 class="text-hack ml-4 font-jetbrains-regular">F*ck</h1>
-            <h1 class="text-hack ml-4 font-jetbrains-regular"
-                id="corpo">Zindows</h1>
-        </div>
-        <div class="flex ">
-            <div id="windows" class="grid grid-cols-2 gap-2 w-60 mx-auto my-40">
-                <a href
-                    class="bg-blue-500 text-center aspect-square rounded-tl-lg"></a>
-                <a href
-                    class="bg-blue-500 text-center aspect-square rounded-tr-lg"></a>
-                <a href
-                    class="bg-blue-500 text-center aspect-square rounded-bl-lg"></a>
-                <a href
-                    class="bg-blue-500 text-center aspect-square rounded-br-lg"></a>
+    <body
+        class="bg-gradient-to-br from-gray-900 via-black to-gray-900 min-h-screen">
+        <!-- Header -->
+        <a>
+            <img id="settings" class="absolute up-0 right-6" src="assets/settings.svg"></img>
+        </a>
+        <header class="container mx-auto px-4 py-8">
+            <div class="flex items-center justify-center mb-8">
+                <div
+                    class="bg-gray-800/50 backdrop-blur-sm flex border border-gray-700 text-5xl mx-auto w-[30ch] items-center p-3 rounded-lg shadow-lg">
+                    <p
+                        class="text-hack text-center font-jetbrains-regular">></p>
+                    <h1 class="text-hack ml-4 font-jetbrains-regular">F*ck</h1>
+                    <h1 class="text-hack ml-4 font-jetbrains-regular"
+                        id="corpo">Zindows</h1>
+                </div>
             </div>
-        </div>
+        </header>
+ <div id="snake">
 
+        </div>
+        <!-- Main Content -->
+        <main class="container mx-auto px-4">
+            <!-- Introduction Section -->
+            <section class="text-center mb-16 max-w-3xl mx-auto">
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-white mb-4">Redécouvrez
+                    le numérique libre</h2>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    Un guide ludique, pour apprendre à utiliser les outils de
+                    votre futur liberté numérique.
+                </p>
+            </section>
+
+            <!-- Projects Grid -->
+            <div class="flex justify-center mb-20">
+                <div id="windows" class="grid grid-cols-2 gap-4 w-64">
+                    <button type="button" data-project="1"
+                        class="project-card group relative bg-gradient-to-br from-blue-500 to-blue-600 text-center aspect-square rounded-tl-lg transition-[width,height,opacity,box-shadow] duration-[1000ms] ease-out cursor-pointer flex items-center justify-center overflow-hidden">
+                        <a href="nird.html"
+                            class="project-text opacity-0 transition-opacity duration-[1000ms] ease-out text-white font-bold text-4xl px-2 z-10">btn_nird</a>
+                    </button>
+                    <button type="button" data-project="1"
+                        class="project-card group relative bg-gradient-to-br from-blue-500 to-blue-600 text-center aspect-square rounded-tr-lg transition-[width,height,opacity,box-shadow] duration-[1000ms] ease-out cursor-pointer flex items-center justify-center overflow-hidden">
+                        <a href="nird2.html"
+                            class="project-text opacity-0 transition-opacity duration-[1000ms] ease-out text-white font-bold text-4xl px-2 z-10">btn_nird2</a>
+                    </button>
+                    <button type="button" data-project="3"
+                        class="project-card group relative bg-gradient-to-br from-blue-500 to-blue-600 text-center aspect-square rounded-bl-lg transition-[width,height,opacity,box-shadow] duration-[1000ms] ease-out cursor-pointer flex items-center justify-center overflow-hidden">
+                        <span
+                            class="project-text opacity-0 transition-opacity duration-[1000ms] ease-out text-white font-bold text-4xl px-2 z-10">Pourquoi utiliser un ordinateur reconditionné au lieux d'un ordinateur récent? <br>
+
+Depuis l'annonce de la fin du support de windows 10 le marché du reconditionné est inondé d'ancienne ordinateurs. C'est ordinateur sont loins d'être obsolete il ont encore des belles années devant eux mais on nous apprends pas comment tirer le maximum de ses ordinateurs qui ont encore temps a nous offrir.</span>
+                    </button>
+                    <button type="button" data-project="4"
+                        class="project-card group relative bg-gradient-to-br from-blue-500 to-blue-600 text-center aspect-square rounded-br-lg transition-[width,height,opacity,box-shadow] duration-[1000ms] ease-out cursor-pointer flex items-center justify-center overflow-hidden">
+                        <span
+                            class="project-text opacity-0 transition-opacity duration-[1000ms] ease-out text-white font-bold text-4xl px-2 z-10">Pourquoi utiliser linux au lieux de windows ?  <br>
+
+La suite logique d'un pc reconditionné est l'installation de linux. Linux est l'OS le plus adapté pour un pc qui commence à vieillir mais qui est encore entièrement fonctionnel 
+Linux consomme en moyen 2 a 3 fois moins de ressources de l'ordinateur et est bien plus modulable 
+
+(ça veut dire que tu choisis exactement quelles applications ou fonctionnalités tu as sur ton ordinateur et, tu n'as pas de base des applications que tu ne souhaite pas ou des services qui collecte tes données sans que tu sois vraiment au courant "merci windows!")</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="border-t border-gray-800 pt-8 pb-8 text-center">
+                <p class="text-gray-500">© 2025 Zindows. aucun droits
+                    réservés.</p>
+            <a href="terminal.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="fill-white" viewBox="0 0 16 16">
+  <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9M3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708z"/>
+  <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/>
+</svg>
+            </a>
+            </footer>
+        </main>
+
+        <script>
+            const projectCards = document.querySelectorAll('.project-card');
+            let activeCard = null;
+
+            projectCards.forEach(card => {
+                card.addEventListener('click', (e) => {
+                    //e.preventDefault();
+                    
+                    // Si on clique sur la même carte, on la ferme
+                    if (activeCard === card) {
+                        closeCard(card);
+                        activeCard = null;
+                        return;
+                    }
+
+                    // Fermer la carte active si une autre est ouverte
+                    if (activeCard) {
+                        closeCard(activeCard);
+                    }
+
+                    // Ouvrir la nouvelle carte
+                    openCard(card);
+                    activeCard = card;
+                });
+            });
+
+            function openCard(card) {
+                card.style.position = 'fixed';
+                card.style.top = '50%';
+                card.style.left = '50%';
+                card.style.transform = 'translate(-50%, -50%)';
+                card.style.width = '80vw';
+                card.style.height = '70vh';
+                card.style.aspectRatio = 'auto';
+                card.classList.add('rounded-xl');
+                card.style.boxShadow = '0 25px 50px -12px rgba(59, 130, 246, 0.5)';
+                card.style.zIndex = '60';
+                
+                const text = card.querySelector('.project-text');
+                if (text) {
+                    text.style.transition = 'opacity 1000ms ease-out';
+                    setTimeout(() => {
+                        text.style.opacity = '1';
+                    }, 10);
+                }
+            }
+
+            function closeCard(card) {
+                // Cacher le texte immédiatement sans transition
+                const text = card.querySelector('.project-text');
+                if (text) {
+                    text.style.transition = 'none';
+                    text.style.opacity = '0';
+                }
+                
+                card.style.position = '';
+                card.style.top = '';
+                card.style.left = '';
+                card.style.transform = '';
+                card.style.width = '';
+                card.style.height = '';
+                card.style.aspectRatio = '';
+                card.classList.remove('rounded-xl');
+                card.style.boxShadow = '';
+                card.style.zIndex = '';
+                
+                // Réinitialiser la transition après la fermeture
+                if (text) {
+                    setTimeout(() => {
+                        text.style.transition = '';
+                    }, 100);
+                }
+            }
+
+            // Fermer la carte si on clique en dehors
+            document.addEventListener('click', (e) => {
+                if (activeCard && !activeCard.contains(e.target) && !e.target.closest('.project-card')) {
+                    closeCard(activeCard);
+                    activeCard = null;
+                }
+            });
+        </script>
     </body>
 </html>

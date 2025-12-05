@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link href="style.css" rel="stylesheet">
+        <script type="module" src="Activites.js"></script>
+        <script type="module" src="snake.js"></script>
+
+    </head>
+    <body class="bg-[#1d6bff] ">
+        <a href="index.html"
+            class="absolute top-4 left-4 border-3 p-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+        </a>
+        <div id="snake"></div>
+        <section class="Activité_terminal mt-30">
+            <article id="Commandes">
+                <span class="HOME_content">
+                    <button type="button" id="btn-touch" class="doc1">touch
+                        NIRD</button>
+                    <button type="button" id="btn-mkdir" class="folder">mkdir
+                        Nos_actions</button>
+                </span>
+                <span class="FOLDER_content">
+                    <button type="button" id="btn-ls"
+                        class="FOLDER_content docs_folder hidden">ls -a
+                        /Nos_actions</button>
+                    <button type="button" id="btn-back"
+                        class="FOLDER_content return_HOME hidden">cd
+                        ../</button>
+                </span>
+            </article>
+            <article id="Terminal">
+                <button type="button" id="folder-btn"
+                    class="HOME_content folder hidden">
+                    <img alt="FOLDER" src="assets/folder.png">
+                    Nos_actions
+                </button>
+                <button type="button" id="doc1-btn"
+                    class="HOME_content doc1 hidden">
+                    <img alt="DOC1" src="assets/doc.png">
+                    NIRD
+                </button>
+                <button class="FOLDER_content docs_folder hidden" id="doc2-btn">
+                    <img alt="DOC2" src="assets/doc.png" height=>
+                    Actions_NIRD
+                </button>
+                <button class="FOLDER_content docs_folder hidden" id="doc3-btn">
+                    <img alt="SNAKE.exe" src="assets/SNAKE.png">
+                    .SNAKE.sh
+                </button>
+            </article>
+            <div id="popup-doc1" class="popup hidden">
+                <div class="popup-header">
+                    <span>DOC1/2 - Qu'est-ce que le NIRD?</span>
+                    <button id="popup-close1">&times;</button>
+                </div>
+                <div class="popup-content">
+                    <img alt="logo_NIRD" src="assets/NIRD.png">
+                    <p>Le projet NIRD (Numérique Inclusif, Responsable et
+                        Durable) se présente comme une réponse ambitieuse aux
+                        défis actuels du numérique dans l’éducation. Il ne
+                        s’agit pas seulement d’introduire de nouveaux outils :
+                        c’est une transformation de l’usage, des valeurs, et des
+                        pratiques, articulée autour de trois grands axes :
+                        inclusion, responsabilité et durabilité. C'est une
+                        initiative d'en bas qui cherche à montrer haut qu'il y a
+                        urgence à agir pour changer la situation.</p>
+                    <p>Les acteurs</p>
+                    <ul>
+                        <li>Elèves et éco-délégués</li>
+                        <li>Enseignant.e.s</li>
+                        <li>Directions d'établissements</li>
+                        <li>Techniciens et administrateurs réseaux des
+                            établissements</li>
+                        <li>Associations partenaires et clubs
+                            d'informatique</li>
+                        <li>Collectivités territoriales</li>
+                        <li>Services académiques et ministère</li>
+                    </ul>
+                    <p>Ensemble, ces acteurs expérimentent, partagent et
+                        transforment les pratiques pour construire un numérique
+                        éducatif plus autonome, plus durable, plus éthique.</p>
+                    <hr>
+
+                </div>
+            </div>
+            <div id="popup-doc2" class="popup hidden">
+                <div class="popup-header">
+                    <span>DOC2/2 - Nos actions</span>
+                    <button id="popup-close2">&times;</button>
+                </div>
+                <div class="popup-content">
+                    <p>La démarche NIRD vise à promouvoir un numérique libre,
+                        responsable et écocitoyen au sein des établissements
+                        scolaires. Ses principales activités sont :</p>
+                    <ul>
+                        <li>Sensibiliser les équipes éducatives et les élèves à
+                            la sobriété numérique</li>
+                        <li>Encourager le réemploi et le reconditionnement du
+                            matériel</li>
+                        <li>Promouvoir l'usage de Linux afin de luter contre
+                            l'obsolescence programmée</li>
+                        <li>Mutualiser les ressources et outils libres via la
+                            Forge des communs numériques éducatifs</li>
+                        <li>Accompagner les établissements et collectivités dans
+                            une transition numérique écoresponsable</li>
+                        <li>Favoriser la co-construction de solutions numériques
+                            locales, ouvertes et autonomes</li>
+                    </ul>
+                    <p>La démarche repose sur trois piliers : Inclusion,
+                        Responsabilité, Durabilité, qui guident l'ensemble des
+                        actions menées</p>
+                </div>
+            </div>
+        </section>
+    </body>
